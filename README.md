@@ -70,6 +70,22 @@ An example Flask-based web app is provided in the gif above that displays the la
 9. Ensure you **classify each polygon** by clicking the drop-down under "Change Class" and selecting the correct category
  
 
+
+
+## Libraries, Credits and License
+
+Incorporates the public domain [json2.js](https://github.com/douglascrockford/JSON-js) library.
+Uses [d3.js](http://d3js.org/), [jQuery](https://jquery.com/), [popper.js](https://popper.js.org/),
+[PolyK](http://polyk.ivank.net/), [polybooljs](https://github.com/voidqk/polybooljs) and
+[Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/).
+
+This software was developed by Geoffrey French in collaboration with Dr. M. Fisher and
+Dr. M. Mackiewicz at the [School of Computing Sciences](http://www.uea.ac.uk/computing)
+at the [University of East Anglia](http://www.uea.ac.uk) as part of a project funded by
+[Marine Scotland](http://www.gov.scot/Topics/marine).
+
+It is licensed under the MIT license.
+
 <!-- This function is currently not working for different directories. If you want to load images from a different directory, or if you installed from PyPI, tell `flask_labeller`
 where to look:
 
@@ -105,16 +121,4 @@ If you want to use a custom DEXTR model that you trained for your purposes, use 
 ###
 
 
-## Libraries, Credits and License
 
-Incorporates the public domain [json2.js](https://github.com/douglascrockford/JSON-js) library.
-Uses [d3.js](http://d3js.org/), [jQuery](https://jquery.com/), [popper.js](https://popper.js.org/),
-[PolyK](http://polyk.ivank.net/), [polybooljs](https://github.com/voidqk/polybooljs) and
-[Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/).
-
-This software was developed by Geoffrey French in collaboration with Dr. M. Fisher and
-Dr. M. Mackiewicz at the [School of Computing Sciences](http://www.uea.ac.uk/computing)
-at the [University of East Anglia](http://www.uea.ac.uk) as part of a project funded by
-[Marine Scotland](http://www.gov.scot/Topics/marine).
-
-It is licensed under the MIT license.

@@ -21,7 +21,7 @@ We will be using the Flask version of "Django-Labeller". This should already be 
 
 ### Installation
 
-In case you need to git clone the Biggie Version Locally: 
+In case you need to host the Biggie Version Locally: 
 
 ```shell script
 > git clone https://github.com/biggie-inc/django-labeller.git
@@ -37,7 +37,7 @@ To use it as a library, either with Flask or Django, install from PyPI:
 ### For Flask Web App
 An example Flask-based web app is provided in the gif above that displays the labelling tool within a web page.
 
-1. Before running the program, ensure all photos that need to have outlines drawn are located in or moved to ../django-labeller/images/
+1. Before running the program, please ensure all photos that need to have outlines drawn are located in or moved to ../django-labeller/images/
 
 2.  To start the program:
 
@@ -60,12 +60,12 @@ An example Flask-based web app is provided in the gif above that displays the la
 6. Now open `127.0.0.1:5000` within a browser. This is a local server where the app will run in a browser window, and you can begin outlining.
 
 7. To begin drawing outlines:
-  - Under "Edit Labels", select "Poly"
-  - Under "Multi-Polygon", select "Mode: New" and "Draw: Polygon"
-  - Left-click to create boundary points
-  - When outline complete, right-click to complete polygon
+    - Under "Edit Labels", select "Poly"
+    - Under "Multi-Polygon", select "Mode: New" and "Draw: Polygon"
+    - Left-click to create boundary points
+    - When outline complete, right-click to complete polygon
 
-8. Adjust polygon if needed by selecting "Mode: Add" or "Mode: subtract"
+8. If needed, adjust polygon by selecting "Mode: Add" or "Mode: subtract"
 
 9. Ensure you **classify each polygon** by clicking the drop-down under "Change Class" and selecting the correct category
  
@@ -101,6 +101,8 @@ If you want to use a custom DEXTR model that you trained for your purposes, use 
 > python -m image_labelling_tool.flask_labeller --dextr_weights=path/to/model.pth
 ````
 --!>
+
+###
 
 
 ## Libraries, Credits and License

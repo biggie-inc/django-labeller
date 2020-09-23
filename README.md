@@ -54,7 +54,7 @@ An example Flask-based web app is provided in the gif above that displays the la
 5. If you need to select the specific extensions of the files (ie: .jpg or .png):
 
 ```shell script
-> python -m image_labelling_tool.flask_labeller --images_pat=<images_directory>/*.<jpg|png>
+> python -m image_labelling_tool.flask_labeller_mod --images_pat='images/*.png'
 ```
 
 6. Now open `127.0.0.1:5000` within a browser. This is a local server where the app will run in a browser window, and you can begin outlining.
@@ -117,8 +117,5 @@ If you want to use a custom DEXTR model that you trained for your purposes, use 
 > python -m image_labelling_tool.flask_labeller --dextr_weights=path/to/model.pth
 ````
 --!>
-
-###
-
 
 

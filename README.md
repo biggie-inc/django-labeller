@@ -16,10 +16,10 @@ Django Labeller in action:
 
 ## Biggie Instructions
 
-We will be using the Flask version of "Django-Labeller". This should already be installed on the server. Follow instructions under "For Flask Web App".
+We will be using the Flask version of "Django-Labeller". This should already be installed on the server. To operate after successful installation, follow instructions under "For Flask Web App".
 
 
-## Installation
+### Installation
 
 In case you need to git clone the Biggie Version Locally: 
 
@@ -35,25 +35,42 @@ To use it as a library, either with Flask or Django, install from PyPI:
 ```
 
 ### For Flask Web App
+An example Flask-based web app is provided in the gif above that displays the labelling tool within a web page.
 
-*1. Before running the program, ensure all photos that need to have outlines drawn are located in ../django-labeller/images/
+1. Before running the program, ensure all photos that need to have outlines drawn are located in or moved to ../django-labeller/images/
 
-*2. An example Flask-based web app is provided that displays the labelling tool within a web page. To start it:
+2.  To start the program:
 
-*3. cd into the same directory into which you cloned the repo. Example: 
+3. cd into the same directory into which you cloned the repo. Example: 
 ```shell script
 > cd django-labeller/
 ```
 
-*4. Run the following script:
+4. Run the following script:
  
 ```shell script
 > python -m image_labelling_tool.flask_labeller_mod 
 ```
+5. If you need to select the specific extensions of the files (ie: .jpg or .png):
 
-*5. Now open `127.0.0.1:5000` within a browser. This is a local server where the app will run in a browser window.
+```shell script
+> python -m image_labelling_tool.flask_labeller --images_pat=<images_directory>/*.<jpg|png>
+```
 
-<!-- This function is currently not working. If you want to load images from a different directory, or if you installed from PyPI, tell `flask_labeller`
+6. Now open `127.0.0.1:5000` within a browser. This is a local server where the app will run in a browser window, and you can begin outlining.
+
+7. To begin drawing outlines:
+  - Under "Edit Labels", select "Poly"
+  - Under "Multi-Polygon", select "Mode: New" and "Draw: Polygon"
+  - Left-click to create boundary points
+  - When outline complete, right-click to complete polygon
+
+8. Adjust polygon if needed by selecting "Mode: Add" or "Mode: subtract"
+
+9. Ensure you **classify each polygon** by clicking the drop-down under "Change Class" and selecting the correct category
+ 
+
+<!-- This function is currently not working for different directories. If you want to load images from a different directory, or if you installed from PyPI, tell `flask_labeller`
 where to look:
 
 ```shell script
